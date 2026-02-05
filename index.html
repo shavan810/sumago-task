@@ -92,30 +92,30 @@ a{
   padding: 14px 60px;
   border-bottom: 1px solid #eee;
   position: sticky;
-  top: 5px;
+  top: 0;
 }
 
 /* Links center */
 .secondNav{
   display: flex;
   gap: 35px;
-  margin-left: 30%;
+  justify-content: center;
+  flex: 1;
 }
 
+/* Links */
 .link a{
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   color: #333;
-  position: relative;
 }
 
-/*hover  */
 .link a:hover{
   color: #e53935;
 }
 
-
+/* Quote Button */
 .link2 a{
   background: #ff6b6b;
   color: #fff;
@@ -130,7 +130,7 @@ a{
   background: #e53935;
 }
 
-/* responsive design for navbars */
+/* Responsive */
 @media screen and (max-width: 768px) {
   .navC, .navC2 {
     flex-direction: column;
@@ -138,15 +138,15 @@ a{
   }
 
   .secondNav {
-    margin-left: 0;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: flex-start;
   }
+
   .link2 {
     margin-top: 20px;
   }
 }
-
 
 /* for nested cards section  */
 @media screen and (min-width:768px) and (max-width:1000px) {
