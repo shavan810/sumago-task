@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<title>Simple-Animation</title>
+
+<style>
+
+.track {
+  position: relative;
+  margin-top: 500px;
+}
+.track2 {
+position: relative;
+  margin-top: 100px;
+}
+hr {
+  border: none;
+  height: 10px;
+  background: black;
+}
+
+/* Star */
+.box {
+  width: 80px;
+  height: 80px;
+  background: red;
+
+  position: absolute;
+  top: -65px;
+
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+
+  animation: moveBox 5s infinite linear;
+}
+
+@keyframes moveBox {
+  from {
+    left: 0;
+    transform: rotate(0deg);
+    background: red;
+  }
+
+  to {
+    left: 100%;
+    transform: rotate(360deg);
+    background: blue;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="track">
+  <div class="box"></div>
+  <hr>
+</div>
+
+<div class="track2">
+  <div class="box"></div>
+  <hr>
+</div>
+
+</body>
+</html>
