@@ -147,6 +147,184 @@ a{
     margin-top: 20px;
   }
 }
+/* cards section 1 */
+/* Section background */
+.card1Con {
+  width: 100%;
+  background: #efe7e3;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Cards wrapper */
+.allCard {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Single card */
+.card1 {
+  background: #f7f7f7;
+  width: 230px;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: left;
+  border: 1px dashed #ddd;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.card1 img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.card1Title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .allCard {
+    gap: 15px;
+  }
+
+  .card1 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card1 {
+    width: 100%;
+  }
+}
+
+/* this is middle red content section  */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} */
+
+/* SECTION */
+.numbers-section {
+  background: #f24b4b;
+  padding: 60px;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+/* LEFT BLACK CARD */
+.left-card {
+  background: #000;
+  color: white;
+  padding: 40px;
+  width: 320px;
+  border-radius: 20px;
+}
+
+.left-card .tag {
+  color: #ff4b4b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.left-card h2 {
+  font-size: 34px;
+  margin: 20px 0;
+}
+
+.left-card button {
+  background: #ff4b4b;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* VERTICAL TEXT */
+.vertical-text {
+  position: absolute;
+  left: 47%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  font-size: 90px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 10px;
+}
+
+/* RIGHT SIDE */
+.right-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  gap: 25px;
+}
+
+/* STAT CARDS */
+.stat-card {
+  background: #e9e3df;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+}
+
+.stat-card .red {
+  color: #f24b4b;
+}
+
+.stat-card p {
+  color: #666;
+  margin-top: 5px;
+}
+
+/* ICON CIRCLE */
+.icon {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
 
 /* for nested cards section  */
 @media screen and (min-width:768px) and (max-width:1000px) {
@@ -297,7 +475,77 @@ a{
         </script>
       </div>
     </div>
-<!-- cards section -->
+<!-- cards section 1-->
+<div class="card1Con">
+    <div class="allCard">
+        <div class="card1">
+            <img src="bug.jpg" alt="img1">
+            <p class="card1Title">Do you face frequent website bugs on your website?</p>
+          </div>
+
+           <div class="card1">
+            <img src="crf.jpg" alt="img1">
+            <p class="card1Title">Is the loading speed of your website fast?</p>
+          </div>
+
+           <div class="card1">
+            <img src="responsive.jpg" alt="img1">
+            <p class="card1Title">Is your website’s UI responsive?</p>
+          </div>
+
+           <div class="card1">
+            <img src="website.jpg" alt="img1">
+            <p class="card1Title">Do you have a valid SSL certificate?</p>
+          </div>
+    </div>
+
+</div>
+
+<!-- midle red content section -->
+<section class="numbers-section">
+
+  <!-- LEFT BLACK CARD -->
+  <div class="left-card">
+    <span class="tag">NUMBERS SPEAK!</span>
+    <h2>Our Valuable<br>Clients</h2>
+    <button>START YOUR PROJECT</button>
+  </div>
+
+  <!-- VERTICAL TEXT -->
+  <div class="vertical-text">NUMBERS</div>
+
+  <!-- RIGHT CARDS -->
+  <div class="right-cards">
+
+    <div class="stat-card">
+      <h3>589+</h3>
+      <p>Website</p>
+      <div class="icon">🤝</div>
+    </div>
+
+    <div class="stat-card">
+      <h3>551+</h3>
+      <p>Happy Clients</p>
+      <div class="icon">🖥️</div>
+    </div>
+
+    <div class="stat-card">
+      <h3>50+</h3>
+      <p>Award Won</p>
+      <div class="icon">🏆</div>
+    </div>
+
+    <div class="stat-card">
+      <h3 class="red">129+</h3>
+      <p>Mobile App</p>
+      <div class="icon">👨‍💻</div>
+    </div>
+
+  </div>
+
+</section>
+
+ <!-- cards section 2-->
    
     <div class="container">
             <div class="title">Why Sumago ?</div>
